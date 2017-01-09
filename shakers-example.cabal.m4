@@ -13,15 +13,13 @@ build-type:            Simple
 cabal-version:         >= 1.22
 
 executable shakers-example
-hs-source-dirs:      main
-main-is:             example.hs
-ghc-options:         -threaded -rtsopts -with-rtsopts=-N -Wall
-build-depends:       base >= 4.8 && < 4.9
-default-language:    Haskell2010
+  hs-source-dirs:      main
+  main-is:             example.hs
+  build-depends:       base >= 4.8 && < 4.9
+  default-language:    Haskell2010
 
 executable shake-shakers
   main-is:             Shakefile.hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N -Wall
   build-depends:       base >= 4.8 && < 4.9
                      , shakers
   default-language:    Haskell2010
